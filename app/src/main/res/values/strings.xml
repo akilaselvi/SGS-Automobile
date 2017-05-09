@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SGSAutoMobile</string>
+
+        <string name="hint_party_name">Party Name</string>
+        <string name="hint_bill_number">Bill Number</string>
+        <string name="hint_date">Date</string>
+        <string name="hint_godown">Godown Name</string>
+        <string name="btn_report">Report</string>
+        <string name="dialogToast_search_vendor">Please Fill All  Fields</string>
+        <string name="dialogToast_openScreen">Please Fill All Vendor Information </string>
+    <string name="hint_party_nameAdd">Party Name</string>
+    <string name="hint_bill_numberAdd">Bill Number</string>
+    <string name="hint_dateAdd">Date</string>
+    <string name="hint_godownAdd">Godown Name</string>
+    <string name="hint_partyDialog_name">Item Name</string>
+    <string name="hint_prchDialog_code">Item Code</string>
+    <string name="purDialog_quty">Quantity</string>
+    <string name="purDialog_rate">Rate</string>
+    <string name="purDialog_disc">Discount</string>
+    <string name="hint_reportDialog_name">Party Name</string>
+    <string name="hint_reportDialog_number">Bill Number</string>
+    <string name="report_date">Date</string>
+    <string name="btn_reportOk">Ok</string>
+    <string name="dialogAdd_new">Please Fill All Item Details</string>
+    <string name="hint_party_code">Godown Code</string>
+    <string name="TileInward">Inward Entry</string>
+    <string name="TilePurchase">Purchase Entry</string>
+
+</resources>

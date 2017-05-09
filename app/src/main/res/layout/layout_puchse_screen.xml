@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_spinner_purchase"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_godown_name_purchase"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/searchitem_purchase"
+            android:layout_weight="2"
+            android:hint="Search..."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:drawableRight="@drawable/magnify"
+            android:background="@drawable/backgroundlogin"
+            android:layout_margin="5dp">
+        </EditText>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_lay_purchase">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/relHeader_purchase" >
+
+            <LinearLayout
+                android:id="@+id/textLinear_purchase"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linerheader_purchase"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal"
+                    android:weightSum="4"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/txtsCodes_purchase"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="Code"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:background="@color/blue_200"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtsnames_purchase"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:background="@color/blue_100"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Item Name"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtsQuty_purchase"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="Qty"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:background="@color/blue_200"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="17dp"
+                        android:id="@+id/check_id_purchase"
+                        android:layout_weight="0.4"
+                        android:text="Del"
+                        android:textSize="15sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/txtoflinear_purchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal"
+                    android:weightSum="4"
+                  >
+
+
+                    <TextView
+                        android:id="@+id/txtCodes_purchase"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="Code"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:background="#00e6ac"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtnames_purchase"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:background="#1affc6"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Item Name"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtQuty_purchase"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="Qty"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:background="#00e6ac"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtRate_purchase"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="Rate"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:background="#1affc6"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtDisc_purchase"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="Dis"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:background="#00e6ac"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="17dp"
+                        android:id="@+id/checks_id_purchase"
+                        android:layout_weight="0.4"
+                        android:text="Del"
+                        android:textSize="15sp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_weight="35"
+                android:layout_marginTop="1dp"
+                android:visibility="visible"
+                android:id="@+id/relative_list_purchase"
+                android:layout_below="@+id/textLinear_purchase"
+                android:layout_above="@+id/footer_rel_one_purchase">
+
+                <ListView
+                    android:id="@+id/list_listView_purchase"
+                    android:layout_width="match_parent"
+                    android:foregroundGravity="center"
+                    android:divider="@color/colorWhite"
+                    android:dividerHeight="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                </ListView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_weight="35"
+                android:layout_above="@+id/footer_rel_one_purchase">
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabAdd_purchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_input_add"
+                    app:elevation="6dp"
+                    android:onClick="onClick"
+                    app:layout_behavior="a"
+                    app:pressedTranslationZ="12dp"
+                    app:borderWidth="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/footer_rel_one_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_above="@+id/real_footer_sec_purchase"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:id="@+id/liner_footer_purchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true">
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/btn_report_purchase"
+                        android:text="Report"
+                        android:padding="5sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="0.14"
+                        android:layout_marginRight="2dp"
+                        android:textAllCaps="false"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+                    <!--  <Button
+                          android:layout_width="50dp"
+                          android:layout_height="30dp"
+                          android:id="@+id/btn_report"
+                          android:text="Report"
+                          android:padding="5sp"
+                          android:layout_marginTop="2dp"
+                          android:layout_weight="0.14"
+                          android:layout_marginRight="2dp"
+                          android:textAllCaps="false"
+                          android:background="@color/colorPrimary"
+                          android:textColor="@color/colorWhite"
+                          android:textSize="12sp" />
+  -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Total Count: "
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:id="@+id/txt_rowCount_purchase"
+                        android:textAlignment="center"
+                        android:layout_weight="0.3"
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Total Quantity : "
+                        android:gravity="center"
+                        android:id="@+id/txt_quty_purchase"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_weight="0.3"
+                        android:textSize="12sp"/>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/update_purchase"
+                        android:text="Update"
+                        android:padding="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="0.14"
+                        android:textAllCaps="false"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:id="@+id/real_footer_sec_purchase"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/lay1_purchase">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtpartyname_purchase"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"
+                        android:freezesText="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:text = "Party : "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_weight="2"
+                        android:freezesText="true"
+                        android:id="@+id/txtbillnumber_purchase"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"
+                        android:layout_marginTop="3dp"
+                        android:text = "BillNo : "/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/lay2_purchase"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@+id/lay1_purchase"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtdate_purchase"
+                        android:layout_weight="2"
+                        android:freezesText="true"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"
+                        android:text = "Date : "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_weight="2"
+                        android:freezesText="true"
+                        android:id="@+id/txtGodownname_purchase"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"
+                        android:text = "Godown : "/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/prchase_entity_dialogbx_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+</LinearLayout>

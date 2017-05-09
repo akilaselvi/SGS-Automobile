@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00ace6</color>
+    <color name="colorPrimaryDark">#0099cc</color>
+    <color name="colorAccent">#0086b3</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGreen">#339933</color>
+    <color name="colorPrimaryDarkGreen">#2eb8b8</color>
+    <color name="inward">#0099cc</color>
+    <color name="setting">#248f8f</color>
+    <color name="logout">#ff4da6</color>
+    <color name="notification">#ff4da6</color>
+    <color name="report">#ff4da6</color>
+    <color name="entry">#00cc99</color>
+    <color name="black">#000000</color>
+    <color name="liteRed">#FFCCBC</color>
+    <color name="liteGreen">#C8E6C9</color>
+    <color name="liteBlue">#B2EBF2</color>
+    <color name="green">#267326</color>
+    <color name="red">#b32400</color>
+
+
+</resources>

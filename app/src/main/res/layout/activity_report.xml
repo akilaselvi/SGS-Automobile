@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollableContents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="0.173dp">
+
+                <EditText
+                    android:id="@+id/dialogReport_Name"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="start"
+                    android:paddingTop="0dp"
+                    android:ems="3"
+                    android:inputType="textAutoCorrect|text"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_reportDialog_name">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="0.173dp">
+
+                <EditText
+                    android:id="@+id/dialogReport_billNo"
+                    android:ems="3"
+                    android:paddingTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="start"
+                    android:inputType="text|number"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/hint_reportDialog_number">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="0.173dp">
+
+                <EditText
+                    android:id="@+id/dialogReport_Date"
+                    android:layout_gravity="start"
+                    android:ems="3"
+                    android:paddingTop="0dp"
+                    android:inputType="number"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/report_date">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnOk_dialogReport"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:background="@drawable/round_corner"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:text="@string/btn_reportOk">
+            </Button>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

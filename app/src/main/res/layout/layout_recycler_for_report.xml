@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_shop_root_linearlayout_report"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <include
+        layout="@layout/app_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/layout_main_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimaryDarkGreen">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_name_report"
+                        android:layout_margin="5dp"
+                        android:text="  Name"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="#000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_code_report"
+                        android:layout_margin="5dp"
+                        android:text="Code"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:textColor="#000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:id="@+id/item_quantity_report"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.2"
+                        android:gravity="left"
+                        android:text="Qty"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:id="@+id/item_rate_report"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.2"
+                        android:gravity="left"
+                        android:text="Rate"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_margin="5dp"
+                        android:id="@+id/Discount"
+                        android:gravity="left"
+                        android:text="Dis"/>
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/report_list_listView"
+                    android:layout_width="match_parent"
+                    android:foregroundGravity="center"
+                    android:dividerHeight="0.2dp"
+                    android:divider="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    >
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    >
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:id="@+id/bill_number"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:hint="Bill Number"
+                        android:background="@drawable/background"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Enter"
+                        android:layout_weight="0.5"
+                        android:id="@+id/submit_bill"
+                        android:background="@color/colorPrimary"/>
+                </LinearLayout>
+
+                </LinearLayout>
+<!--
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/print_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="50dp"
+                    android:src="@drawable/check"
+                    app:backgroundTint="@color/colorGreen"
+                    app:borderWidth="0dp" />
+-->
+                <ProgressBar
+                    android:id="@+id/itemProgressBarReport"
+                    style="@android:style/Widget.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

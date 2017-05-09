@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    android:background="@color/colorPrimary">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_left"
+        />
+    <ImageView
+        android:id="@+id/imgDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/accounttedit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgFragme"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/openew"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        />
+
+   <!-- <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/searchitem"
+        android:layout_weight="2"
+        android:hint=" Search"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textColorHint="@color/white"
+        android:drawableRight="@drawable/magnify"
+        android:background="@drawable/edittext_modified_states"
+        android:layout_marginTop="5dp"
+        android:cursorVisible="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+    </EditText>-->
+
+    <!--
+        <SearchView
+            android:id="@+id/img_SEARCHE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:queryHint="Search here"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:searchIcon="@drawable/magnify"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:tint="@color/colorWhite"
+            />
+    -->
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_marginTop="8dp"
+        android:layout_width="150dp"
+        android:listPreferredItemHeightSmall="40dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/img"
+        />
+</RelativeLayout>

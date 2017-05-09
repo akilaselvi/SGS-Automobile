@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="3dp"
+    android:elevation="0dp"
+    android:background="@color/colorPrimary"
+    card_view:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/itemNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="10.75"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:maxLength="20"
+                    android:textColor="@color/colorWhite"
+                    tools:text="Product Name" />
+
+                <TextView
+                    android:id="@+id/itemCodeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorWhite"
+                    tools:text="Product Code" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/itemMRBTV"
+                android:layout_width="5dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_weight="0.55"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorWhite"
+                tools:text=" MRP" />
+
+
+            <!--       <TextView
+                       android:id="@+id/textDisc"
+                       android:layout_width="5dp"
+                       android:layout_height="25dp"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:textColor="@color/colorWhite"
+                       android:text="Disc%"
+                       android:textAlignment="gravity"
+                       android:layout_weight="1"
+                       android:textStyle="bold"
+                       android:textSize="12sp" />
+
+                   <EditText
+                       android:id="@+id/discount"
+                       android:layout_width="8dp"
+                       android:layout_height="25dp"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:background="@color/colorWhite"
+                       android:text="0"
+                       android:textAlignment="gravity"
+                       android:layout_weight="1"
+                       android:cursorVisible="true"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:textSize="13sp" />-->
+
+    <!--        <ImageView
+                android:id="@+id/displayItemDetailsIV"
+                android:layout_width="18dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:padding="5dp"
+                android:alpha="1.5"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/filewhite" />
+-->
+
+           <!-- <ImageView
+                android:id="@+id/minusIV"
+                android:layout_width="18dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:padding="5dp"
+                android:alpha="1.5"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/minuswhite" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Qty"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/colorWhite"/>
+
+            <EditText
+                android:id="@+id/quantityTV"
+                android:layout_width="8dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/colorWhite"
+                android:hint="0"
+                android:inputType="number|text"
+                android:textAlignment="gravity"
+                android:layout_weight="0.56"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="16sp" />
+
+         <!--   <ImageView
+                android:id="@+id/plusIV"
+                android:layout_width="18dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:padding="5dp"
+                android:alpha="1.5"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/pluswhite" />-->
+
+
+            <CheckBox
+                android:id="@+id/chkIos"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:buttonTint="#FFFFFF"
+                android:gravity="center"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="5dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

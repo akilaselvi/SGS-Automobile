@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/inward">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textSize="20sp"
+            android:padding="2dp"
+            android:layout_toLeftOf="@+id/pluse"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_alignBottom="@+id/minusIV" />
+
+
+        <ImageView
+        android:id="@+id/pluse"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:layout_weight="1"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/pluswhite"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_toLeftOf="@+id/minusIV" />
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/minuswhite"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="12.30 AM"
+                android:id="@+id/date"
+                android:layout_weight="0.5"
+                android:layout_gravity="left"
+                android:gravity="bottom"
+                android:textSize="25dp"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="12.30 AM"
+                android:id="@+id/day"
+                android:layout_weight="0.5"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            >
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sun"
+                android:id="@+id/img_cloud"
+                android:layout_weight="0.5"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Cloudy"
+                android:id="@+id/cloud_type"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/dropshadowView"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_dropshadow" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDarkGreen"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:src="@drawable/checkbox"
+                android:id="@+id/godown_img"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:src="@drawable/format"
+                android:id="@+id/inward_img"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:src="@drawable/file"
+                android:id="@+id/report_img"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="end"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:src="@drawable/settings"
+                android:id="@+id/setting_img"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:src="@drawable/bell"
+                android:id="@+id/notification_img"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:src="@drawable/logout"
+                android:id="@+id/logout_img"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

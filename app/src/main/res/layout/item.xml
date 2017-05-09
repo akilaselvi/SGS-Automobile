@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_toLeftOf="@+id/check_id"
+        android:layout_toStartOf="@+id/check_id">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:id="@+id/edt_itemCode"
+                android:layout_width="111dp"
+                android:layout_weight="0.35"
+                android:layout_height="wrap_content"
+                android:hint="Item Code"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:imeOptions="flagNoExtractUi"
+
+                />
+
+            <TextView
+                android:id="@+id/edt_itemName"
+                android:layout_width="111dp"
+                android:layout_weight="0.35"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNoExtractUi"
+                android:hint="Item Name"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edt_itemQuty"
+                android:layout_width="111dp"
+                android:layout_weight="0.35"
+                android:imeOptions="flagNoExtractUi"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:hint="quty"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/edt_disc"
+                android:layout_width="141dp"
+                android:layout_weight="0.35"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNoExtractUi"
+                android:hint="Discount" />
+
+            <TextView
+                android:id="@+id/edt_rate"
+                android:layout_width="141dp"
+                android:layout_weight="0.36"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNoExtractUi"
+                android:hint="Rate"
+                />
+
+        </LinearLayout>
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_id"
+        android:src="@android:drawable/ic_menu_delete"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
